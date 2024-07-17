@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House at Night</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: black;
+        }
+        .scene {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+        }
+        .house {
+            position: absolute;
+            bottom: 10%;
+            left: 10%;
+            width: 200px;
+            height: 200px;
+            background-color: #ffd700;
+            border: 2px solid black;
+        }
+        .roof {
+            position: relative;
+            top: -40px;
+            width: 100%;
+            right: 1px;
+            height: 50px;
+            background-color: #b8860b;
+            border: 2px solid black;
+            border-radius: 20px 20px 0 0;
+        }
+        .chimney {
+            position: absolute;
+            top: -100px;
+            right: 20px;
+            width: 30px;
+            height: 60px;
+            background-color: #d3d3d3;
+            border: 2px solid white;
+        }
+        .door {
+            position: absolute;
+            bottom: 0;
+            left: 10%;
+            width: 50px;
+            height: 100px;
+            background-color: #ffa07a;
+            border: 2px solid black;
+        }
+        .window {
+            position: absolute;
+            bottom: 50px;
+            right: 10%;
+            width: 60px;
+            height: 60px;
+            background-color: #4169e1;
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+        .window div {
+            border: 1px solid black;
+        }
+        .tree {
+            position: absolute;
+            bottom: 10%;
+            right: 10%;
+            width: 50px;
+            height: 100px;
+            background-color: #ffa07a;
+            border: 2px solid black;
+        }
+        .leaves {
+            position: absolute;
+            bottom: 90px;
+            left: -25px;
+            width: 100px;
+            height: 100px;
+            background-color: #98fb98;
+            border: 2px solid black;
+            border-radius: 50%;
+        }
+        .leaves::before,
+        .leaves::after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: #98fb98;
+            border: 2px solid black;
+            border-radius: 50%;
+        }
+        .leaves::before {
+            top: -50px;
+            left: 25px;
+        }
+        .leaves::after {
+            top: -50px;
+            left: -25px;
+        }
+        .moon {
+            position: absolute;
+            top: 10%;
+            right: 15%;
+            width: 100px;
+            height: 100px;
+            box-shadow: 4px 4px 4px  white;
+            background-color: white;
+            border: 2px solid black;
+            border-radius: 50%;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="scene">
+        <div class="house">
+            <div class="roof"></div>
+            <div class="chimney"></div>
+            <div class="door"></div>
+            <div class="window">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <div class="tree">
+            <div class="leaves"></div>
+        </div>
+        <div class="moon"></div>
+        <div class="stars">
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+        </div>
+    </div>
+</body>
+</html>
